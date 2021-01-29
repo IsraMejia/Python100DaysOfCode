@@ -16,7 +16,7 @@ print(states_mexico)
 
 #extend ->  which adds a whole bunch of items
 states_mexico.extend(fruits)
-print(states_mexico)
+print(f'\n\nextend {states_mexico}')
 
 print(f'The numbre of states of Mexico is: {len(states_mexico)}')
 
