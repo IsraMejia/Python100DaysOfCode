@@ -27,16 +27,17 @@ for i in range(nr_symbols):
     pass_symbols.append( symbols[random_index]) 
 
 pass_numbers =[] 
-for i in range(nr_symbols):
+for i in range(nr_numbers):
     random_index = random.randint(0, 8) 
     pass_numbers.append( numbers[random_index]) 
 
-# n = nr_letters + nr_numbers + nr_symbols
+
 password_list = []
 password_list.extend(pass_letters)
 password_list.extend(pass_symbols)
 password_list.extend(pass_numbers)
 
+random.shuffle(password_list)
 print(F'Your new password is: ')
 password = ''
 for i in range(0, len(password_list)-1):
